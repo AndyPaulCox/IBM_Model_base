@@ -1,9 +1,6 @@
-#run fil;e
-
-
+#run file
 #Agent Based Model of COVID 19  created byt Andrew Paul Cox  8th March 2021
 #List to add
-
 
 
 #################################################
@@ -11,6 +8,7 @@
 rm(list=ls())
 #Clear the console
 clc()
+setwd("/Users/apcox/Dropbox/rdata/IBM_Model_base")
 #clear all plots
 library(here) # here() starts at wherever is the working f=directory when this package is loaded
 
@@ -21,7 +19,7 @@ start_time <- Sys.time()
 source(here("scripts/functions.R"))
 #source(here("scripts/getprep_data.R"))
 source(here("scripts/parameters.R"))
-source(here("scripts/init_vars.R"))
+source(here("scripts/initialize.R"))
 
 if(fitting==FALSE){
   source(here("scripts/main.R"))

@@ -1,11 +1,10 @@
 #Initialize
 
-setwd("/Users/AndyC/Dropbox/rdata/covid_IBMmodel/plots")
 
-pth1<-"/Users/AndyC/Dropbox/rdata/covid_IBMmodel/CataloniaMicroDataLatLon.csv"
+pth1<-"data/CataloniaMicroDataLatLon.csv"
 catpop1<-fread(file =pth1)
 
-pth2<-"/Users/AndyC/Dropbox/rdata/covid_IBMmodel/contactList1.csv"
+pth2<-"data/contactList1.csv"
 contacts1<-fread(file =pth2)
 
 

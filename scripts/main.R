@@ -5,7 +5,7 @@ for(tt in 1:timespan1){
   
   fis<-pop1<-F_infection_stage(pop1)
   fcf<-pop1<-F_case_fatality(pop1)
-  outdat1<-F_data_out(tt,pop1,oudat1)
+  outdat1<-F_data_out(tt,pop1,outdat1)
   ftu<-pop1<-F_tidy_up(pop1,died_disease)
   fte<-pop1<-F_time_events(pop1)
   plot_inf<-pop1[pop1$infection_state!="S",]

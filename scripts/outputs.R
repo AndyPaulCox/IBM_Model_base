@@ -47,7 +47,7 @@ table(pop1$t_since_infection)
 tt<-tt+1
 
 # this sets your google map for this session
-# register_google(key = "AIzaSyARjZC1ZjygRbqQYLgsTTppeqw5M7kHscw")
+# register_google(key = "myKeyHere")
 
 gc <- geocode("catalunya, spain", source = "google")
 center <- as.numeric(gc)
