@@ -1,5 +1,5 @@
 #Initialize
-rm(list = ls())
+
 setwd("/Users/AndyC/Dropbox/rdata/covid_IBMmodel/plots")
 
 pth1<-"/Users/AndyC/Dropbox/rdata/covid_IBMmodel/CataloniaMicroDataLatLon.csv"

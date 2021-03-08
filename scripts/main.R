@@ -1,6 +1,4 @@
 #Main file
-
-
 for(tt in 1:timespan1){
   contacted<-F_contacted(pop1,contacts1)
   fie<-pop1<-F_infection_events(contacted,pop1)
@@ -18,8 +16,6 @@ for(tt in 1:timespan1){
   freq2<-as.data.frame(freq1)
   
   pop2<-pop1[infection_state!="S" & infection_state!="RI" , c("lat","long")]
-  
-  
   
   if(nrow(pop2)>400){
     #png(paste0("input_",tt,".png"), width = 1280, height = 720, res = 108)
