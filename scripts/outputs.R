@@ -1,5 +1,5 @@
 #Outputs
-write.csv(pop1,"pop1.csv")
+write.csv(pop1,"results/pop1.csv")
 
 
 out1<-do.call(rbind.data.frame, outdat1)
@@ -19,9 +19,9 @@ plot(out1$Day,out1$Dead,type="l",col="green",main="Deaths",xlab="Day",ylab="Numb
 #############################################################################3
 #############################################################################3
 
-png_files <- sprintf("input_%02d.png", 1:99)
-av::av_encode_video(png_files, 'output.mp4', framerate = 2)
-utils::browseURL('output.mp4')
+png_files <- sprintf("results/mp4/input_%02d.png", 1:99)
+av::av_encode_video(png_files, 'results/mp4/output.mp4', framerate = 2)
+utils::browseURL('results/mp4/output.mp4')
 
 #############################################################################3
 #############################################################################3
